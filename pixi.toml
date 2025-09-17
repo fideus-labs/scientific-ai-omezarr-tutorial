@@ -1,0 +1,10 @@
+[workspace]
+authors = ["Matt McCormick <matt@fideus.io>"]
+channels = ["conda-forge"]
+name = "scientific-ai-omezarr-tutorial"
+platforms = ["win-64", "linux-64", "linux-aarch64", "osx-arm64"]
+version = "1.0.0"
+
+[tasks]
+
+[dependencies]
