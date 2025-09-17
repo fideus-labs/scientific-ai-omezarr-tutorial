@@ -95,11 +95,11 @@ footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fi
 
 ## What can ngff-zarr do for you?
 
-- 🔄 **Convert** your scientific images (NRRD, TIFF, HDF5, and more) to OME-Zarr for scalable, cloud-ready storage.
-- ✅ **Validate** OME-Zarr datasets to ensure compliance and interoperability.
-- 🛠️ **Optimize** chunking and compression for efficient access and storage.
-- 🤖 **Integrate** with AI and analysis tools via the Model Context Protocol (MCP).
-- 🚀 **Automate** batch processing and reproducible workflows for large-scale projects.
+- 🔄 **Convert** your **scientific images** (NRRD, TIFF, HDF5, and more) to OME-Zarr for scalable, cloud-ready storage.
+- ✅ **Validate** OME-Zarr datasets to ensure compliance and **interoperability**.
+- 🛠️ **Optimize** chunking and compression for **efficient access** and **storage**.
+- 🤖 **Integrate** with **AI** and **analysis tools** via the **Model Context Protocol (MCP)**.
+- 🚀 **Automate** batch **processing** and reproducible workflows for large-scale projects.
 
 ---
 
@@ -109,7 +109,57 @@ footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fi
 
 ![h:200 Pixi logo](./assets/pixi-banner.svg)
 
-### 📦 Prerequisites: Reproducible software environment with Pixi
+### 📦 Prerequisites: Pixi reproducible software environment
+
+---
+
+## What is Pixi?
+
+[Pixi](https://pixi.sh/dev/) is a **fast, modern,** and **reproducible package** and **environment manager** built on the **conda ecosystem**. It provides:
+
+- 🚀 **Easy, reproducible environments** for **any language**
+- 🛠️ **Task runner** for project automation
+- 🔒 **Isolation** and **cross-platform** support (Linux, macOS, Windows)
+- 📦 **Simple dependency management** with a single file (`pixi.toml` or `pyproject.toml`)
+
+---
+
+## ⬇️ How to install Pixi
+
+On Linux/macOS:
+
+```bash
+wget -qO- https://pixi.sh/install.sh | sh
+```
+
+On Windows (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"
+```
+
+After installation, add `~/.pixi/bin` (Linux/macOS) or `%USERPROFILE%\.pixi\bin` (Windows) to your PATH if not done automatically.
+
+---
+
+## 🚀 How to run Pixi tasks
+
+Pixi lets you define and run project tasks in your `pixi.toml` or `pyproject.toml`.
+
+To run a task (e.g., `start`):
+
+```bash
+pixi run start
+```
+
+You can define custom tasks (like `test`, `lint`, etc.) and run them the same way:
+
+```bash
+pixi run test
+pixi run lint
+```
+
+Pixi ensures all dependencies and the environment are set up before running your task.
 
 ---
 
