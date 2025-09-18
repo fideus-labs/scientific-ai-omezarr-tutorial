@@ -51,7 +51,7 @@ img[alt~="center"] {
 
 ## What is [OME-Zarr](https://ngff.openmicroscopy.org)?
 
-* **Cloud-native** bioimaging file format
+* **Cloud-native** bioimaging file format from the Open Microscopy Environment (OME)
 * Built on **Zarr** - chunked, compressed array storage
 * **Multiscale** pyramidal data structure
 * **Interoperable** across platforms and tools
@@ -82,7 +82,7 @@ footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https:/fid
 ## What is ngff-zarr?
 
 * [**ngff-zarr**](https://ngff-zarr.readthdocs.io) is an *lean and kind* open-source toolkit for working with OME-Zarr, the next-generation file format for scientific imaging.
-* Provides **command-line**, **Python**, and **TypeScript** interfaces for converting, validating, optimizing, and analyzing bioimaging data.
+* Provides **command-line**, **Python**, **TypeScript**, and **AI** interfaces for converting, validating, optimizing, and analyzing bioimaging data.
 * Developed by the OME-Zarr and ITK communities for **interoperability** and **performance**.
 * Supports a wide range of scientific image formats and workflows.
 
@@ -173,17 +173,8 @@ pixi shell
 
 **What happens:**
 - 🔧 **Environment activated** - all dependencies available
-- 💾 **Environment variables set** - `CONDA_PREFIX`, `PIXI_PROJECT_*`
 - 🎯 **Direct command execution** - no need for `pixi run` prefix
 - 🚪 **Easy exit** - just type `exit` when done
-
-**Example workflow:**
-```bash
-pixi shell          # Enter the environment
-python --version    # Run commands directly
-pytest              # Run tests
-exit               # Leave the environment
-```
 
 ---
 
@@ -197,11 +188,11 @@ pixi run convert
 
 ## What Just Happened?
 
-- 🔍 **Automatic multiscale generation** - 4 resolution levels
+- 🔍 **Automatic multiscale generation** - without aliasing artifacts
 - 🧩 **Intelligent chunking** - optimized for access patterns
 - 📊 **Metadata preservation** - spatial information maintained
 - 🗜️ **Compression applied** - reduced file size
-- ☁️ **Cloud-ready format** - can be served via HTTP
+- ☁️ **Cloud-ready format** - object-store optimized, can be served via HTTP
 
 ---
 
@@ -245,15 +236,37 @@ find carp.ome.zarr -type f | wc -l
 
 ---
 
+## 🧠 Understanding Large Language Model (LLM) Context
+
+**What is Model Context?**
+- 📝 **Information** the AI model can "see" and reason about
+- 🧮 **Limited capacity** - typically measured in tokens (words/symbols)
+- ⏱️ **Temporary memory** - context is conversation-specific
+- 🎯 **Scope of knowledge** for making informed decisions
+
+---
+
+## 🧠 Understanding Large Language Model (LLM) Context
+
+**Why Context Matters:**
+- 🔍 **Better understanding** - more relevant, accurate responses
+- 🎛️ **Tool selection** - AI chooses appropriate tools for the task
+- 🔗 **Data integration** - combines multiple information sources
+- 🚀 **Workflow automation** - maintains state across complex operations
+
+**The Challenge:** *How do we give AI access to your scientific data and tools?*
+
+---
+
 ## What is the Model Context Protocol (MCP)?
 
 **Universal standard** for connecting AI assistants to external data and tools
 
 **Key Components:**
-- **MCP Client** - integrated in AI applications
-- **MCP Server** - exposes specific capabilities
-- **Transport Layer** - JSON-RPC 2.0 communication
-- **Standardized Interface** - tools, resources, prompts
+- 🤖 **MCP Client** - integrated in AI applications
+- 🖥️ **MCP Server** - exposes specific capabilities
+- 🔗 **Transport Layer** - JSON-RPC 2.0 communication
+- 🔧 **Standardized Interface** - tools, resources, prompts
 
 ---
 
@@ -279,19 +292,21 @@ Scientific Data & Tools
 ## Why MCP for Scientific Computing?
 
 **Before MCP:**
-- Custom integrations for each tool
-- Limited AI access to scientific data
-- Manual, error-prone workflows
+- 🔧 Custom integrations for each tool
+- 🚫 Limited AI access to scientific data
+- ✋ Manual, error-prone workflows
 
 **With MCP:**
-- **Natural language** interface to scientific tools
-- **Automated** data processing pipelines
-- **AI-driven** optimization and analysis
-- **Reproducible** computational workflows
+- 💬 **Natural language** interface to scientific tools
+- 🤖 **Automated** data processing pipelines
+- 🧠 **AI-driven** optimization and analysis
+- 🔄 **Reproducible** computational workflows
 
 ---
 
 ## 🛠️ Hands-On: Configure Qodo with MCP
+
+---
 
 **In VS Code with Qodo Extension:**
 
