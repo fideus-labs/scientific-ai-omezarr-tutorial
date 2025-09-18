@@ -6,12 +6,18 @@ platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "1.0.0"
 
 [tasks]
+# Exercises from the tutorial
 convert = "ngff-zarr -i data/vis_male.nrrd -o vis_male.ome.zarr"
 "convert-ome-zarr-0.5" = "ngff-zarr -i data/carp.nrrd -o carp.ome.zarr --ome-zarr-version 0.5"
 "convert-sharding" = "ngff-zarr -i data/carp.nrrd -o carp.ome.zarr --ome-zarr-version 0.5 --chunks-per-shard 4"
 
+# Document exports
+export-html = "npx -y @marp-team/marp-cli@latest README.md -o index.html"
+export-pdf = "npx -y @marp-team/marp-cli@latest README.md -o scientific-ai-omezarr-tutorial.pdf"
+
 [dependencies]
 python = "3.11.*"
+# Marp presentation
 nodejs = ">=24.4.1,<24.5"
 
 [pypi-dependencies]
