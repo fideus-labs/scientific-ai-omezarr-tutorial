@@ -430,7 +430,7 @@ Generate a Python script to batch convert them all
 to OME-Zarr with the same optimal settings
 ```
 
-**✨ The AI agent creates:**
+**✨ [The AI agent creates](./assets/ai-generate-batch-script-output.png):**
 - 🐍 Complete Python script
 - ⚠️ Error handling
 - 📈 Progress reporting
@@ -441,50 +441,16 @@ to OME-Zarr with the same optimal settings
 ## The Future of Scientific AI
 
 **Today's Demo Shows:**
-- **Conversational** scientific computing
-- **Automated** optimization
-- **Reproducible** workflows
-- **Accessible** advanced techniques
+- 💬 **Conversational** scientific computing
+- 🤖 **Automated** optimization
+- 🔄 **Reproducible** workflows
+- ✨ **Accessible** advanced techniques
 
 **Tomorrow's Possibilities:**
-- Multi-modal analysis pipelines
-- Intelligent experiment design
-- Automated quality control
-- Cross-platform integration
-
----
-
-# Part 4: GitHub Codespaces Demo
-*Cloud-Native Development*
-
----
-
-## Why GitHub Codespaces?
-
-**For Scientific Tutorials:**
-- **Zero setup** - pre-configured environment
-- **Consistent** across all participants
-- **Scalable** - runs in the cloud
-- **Reproducible** - version-controlled setup
-- **Accessible** - works on any device
-
-**Perfect for:**
-- Workshop environments
-- Educational content
-- Collaborative research
-
----
-
-## 🛠️ Live Demo: Complete Workflow
-
-**We'll demonstrate:**
-
-1. **Open Codespace** - instant development environment
-2. **Install tools** - ngff-zarr + MCP server
-3. **Configure AI** - connect Qodo to MCP
-4. **Process data** - convert sample datasets
-5. **Generate code** - AI-created batch scripts
-6. **Share results** - collaborative workflows
+- 🧬 Multi-modal analysis pipelines
+- 🧠 Intelligent experiment design
+- 🛡️ Automated quality control
+- 🌐 Cross-platform integration
 
 ---
 
