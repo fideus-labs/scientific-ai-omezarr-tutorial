@@ -455,34 +455,26 @@ to OME-Zarr with the same optimal settings
 ---
 
 # fideus labs
-*Computational Imaging Excellence*
+**Fostering trust 🤝 and advancing understanding 🧠 from scientific and biomedical images 🔬️**
 
 ---
 
-## About fideus labs
-
-**Mission:** Empowering researchers with precision-engineered computational imaging solutions
+## About [fideus labs](https://fideus.io)
 
 **Specialties:**
-- **Medical Imaging** - ITK core development
+- **Biomedical Imaging** - ITK core development
 - **Scientific Visualization** - advanced rendering
-- **Cloud Infrastructure** - scalable processing
+- **Open science** - pioneering decentralized science
 - **AI Integration** - intelligent workflows
 
 **Open Source Leadership:**
 - ITK (Insight Toolkit) core team
 - OME-Zarr ecosystem contributor
-- MCP server development
+- Curate ngff-zarr development
 
 ---
 
 ## Our Approach
-
-**Quality-First Development:**
-- Rigorous testing and validation
-- Performance optimization
-- Cross-platform compatibility
-- Comprehensive documentation
 
 **Research Partnership:**
 - Government laboratories
@@ -494,16 +486,17 @@ to OME-Zarr with the same optimal settings
 
 ## Connect With Us
 
-**Matthew McCormick**
-- GitHub: `@thewtex`
-- Email: `matt@fideus.io`
-- Web: `fideus.io`
-
-**fideus labs Services:**
+**fideus labs services:**
 - Custom imaging solutions
 - Scientific software development
-- Cloud infrastructure design
 - Training and consultation
+
+**Connect**
+- [Subscribe to our newsletter](https://fideus.io/subscribe)
+- [Email us: info@fideus.io](mailto:info@fideus.io)
+- [Follow our GitHub](https://github.com/fideus-labs)
+
+*We are hiring! [Send us](mailto:matt@fideus.io) your CV and GitHub profile.*
 
 ---
 
@@ -515,8 +508,6 @@ to OME-Zarr with the same optimal settings
 
 ✅ **Natural Language** - New interface for scientific computing
 
-✅ **Reproducible Workflows** - AI-generated, version-controlled
-
 ✅ **Accessible Research** - Cloud-native, collaborative science
 
 ---
@@ -527,39 +518,9 @@ to OME-Zarr with the same optimal settings
 - OME-Zarr fundamentals and conversion
 - MCP architecture and benefits
 - AI-powered scientific workflows
-- Practical GitHub Codespaces setup
 
 **Let's discuss:**
 - Your specific use cases
 - Integration challenges
 - Future possibilities
 - Next steps for implementation
-
----
-
-## Resources
-
-**Documentation:**
-- OME-Zarr: `ngff.openmicroscopy.org`
-- ngff-zarr: `ngff-zarr.readthedocs.io`
-- MCP: `modelcontextprotocol.io`
-
-**Code:**
-- ngff-zarr: `github.com/thewtex/ngff-zarr`
-- MCP examples: `github.com/modelcontextprotocol/servers`
-
-**Community:**
-- Image.sc Forum: `forum.image.sc`
-- OME Community: `openmicroscopy.org`
-
----
-
-# Thank You!
-
-**Scientific AI and the Future of OME-Zarr**
-
-*Building Intelligent Bioimage Analysis Workflows*
-
-**Questions?**
-
-fideus labs | EMBL BIA 2025
