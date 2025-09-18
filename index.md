@@ -163,30 +163,80 @@ Pixi ensures all dependencies and the environment are set up before running your
 
 ---
 
-**Open GitHub Codespace:**
-`https://github.com/fideus-labs/scientific-ai-omezarr-tutorial`
+## 🐚 Interactive shell with `pixi shell`
 
-**Convert with ngff-zarr:**
+**Enter an interactive shell** with your project environment activated:
+
 ```bash
-# Install ngff-zarr
-pip install 'ngff-zarr[cli]'
+pixi shell
+```
 
-# Convert NRRD to OME-Zarr
-ngff-zarr -i sample-data/brain.nrrd -o brain.ome.zarr
+**What happens:**
+- 🔧 **Environment activated** - all dependencies available
+- 💾 **Environment variables set** - `CONDA_PREFIX`, `PIXI_PROJECT_*`
+- 🎯 **Direct command execution** - no need for `pixi run` prefix
+- 🚪 **Easy exit** - just type `exit` when done
 
-# Inspect the result
-ngff-zarr -i brain.ome.zarr
+**Example workflow:**
+```bash
+pixi shell          # Enter the environment
+python --version    # Run commands directly
+pytest              # Run tests
+exit               # Leave the environment
+```
+
+---
+
+## 👩‍💻️ Exercise 1: Convert the sample NRRD image to OME-Zarr
+
+```bash
+pixi run convert
 ```
 
 ---
 
 ## What Just Happened?
 
-- **Automatic multiscale generation** - 4 resolution levels
-- **Intelligent chunking** - optimized for access patterns  
-- **Metadata preservation** - spatial information maintained
-- **Compression applied** - reduced file size
-- **Cloud-ready format** - can be served via HTTP
+- 🔍 **Automatic multiscale generation** - 4 resolution levels
+- 🧩 **Intelligent chunking** - optimized for access patterns
+- 📊 **Metadata preservation** - spatial information maintained
+- 🗜️ **Compression applied** - reduced file size
+- ☁️ **Cloud-ready format** - can be served via HTTP
+
+---
+
+## 👩‍💻️ Exercise 2: Convert the sample NRRD image to OME-Zarr version 0.5
+
+```bash
+pixi run convert-ome-zarr-0.5
+```
+
+```bash
+# Count the number of files created
+find carp.ome.zarr -type f | wc -l
+```
+
+---
+
+## 👩‍💻️ Exercise 3: Convert the sample NRRD image to OME-Zarr with sharding
+
+```bash
+pixi run convert-sharding
+```
+
+```bash
+# Count the number of files created
+find carp.ome.zarr -type f | wc -l
+```
+---
+
+## What Just Happened? ✨ New in OME-Zarr 0.5
+
+- 🪣 **Sharding enabled** - multiple chunks stored in single files
+- 📦 **Optimized storage** - fewer small files, better filesystem performance
+
+**What is Sharding?**
+*Sharding combines multiple small chunks into larger "shard" files, dramatically reducing the number files needed to store data while maintaining random access capabilities.*
 
 ---
 
@@ -201,7 +251,7 @@ ngff-zarr -i brain.ome.zarr
 
 **Key Components:**
 - **MCP Client** - integrated in AI applications
-- **MCP Server** - exposes specific capabilities  
+- **MCP Server** - exposes specific capabilities
 - **Transport Layer** - JSON-RPC 2.0 communication
 - **Standardized Interface** - tools, resources, prompts
 
@@ -235,7 +285,7 @@ Scientific Data & Tools
 
 **With MCP:**
 - **Natural language** interface to scientific tools
-- **Automated** data processing pipelines  
+- **Automated** data processing pipelines
 - **AI-driven** optimization and analysis
 - **Reproducible** computational workflows
 
@@ -270,7 +320,7 @@ pip install 'ngff-zarr[mcp]'
 
 **Core Functions:**
 - Convert scientific formats to OME-Zarr
-- Inspect and validate OME-Zarr stores  
+- Inspect and validate OME-Zarr stores
 - Optimize compression and chunking
 - Generate processing scripts
 - Batch operation planning
@@ -288,7 +338,7 @@ pip install 'ngff-zarr[mcp]'
 
 In Qodo chat:
 ```
-"Convert the brain.nrrd file to OME-Zarr format and 
+"Convert the brain.nrrd file to OME-Zarr format and
 find the optimal compression codec for this type of data"
 ```
 
@@ -305,7 +355,7 @@ find the optimal compression codec for this type of data"
 **Ask the AI to explore:**
 
 ```
-"Examine the contents of brain.ome.zarr and tell me 
+"Examine the contents of brain.ome.zarr and tell me
 about its structure, dimensions, and metadata"
 ```
 
@@ -322,15 +372,15 @@ about its structure, dimensions, and metadata"
 **Scale up with AI automation:**
 
 ```
-"I have a folder of 50 similar NRRD files. 
-Generate a Python script to batch convert them all 
+"I have a folder of 50 similar NRRD files.
+Generate a Python script to batch convert them all
 to OME-Zarr with the same optimal settings"
 ```
 
 **The AI creates:**
 - Complete Python script
 - Error handling
-- Progress reporting  
+- Progress reporting
 - Optimized parameters from previous analysis
 
 ---
@@ -377,7 +427,7 @@ to OME-Zarr with the same optimal settings"
 **We'll demonstrate:**
 
 1. **Open Codespace** - instant development environment
-2. **Install tools** - ngff-zarr + MCP server  
+2. **Install tools** - ngff-zarr + MCP server
 3. **Configure AI** - connect Qodo to MCP
 4. **Process data** - convert sample datasets
 5. **Generate code** - AI-created batch scripts
@@ -417,7 +467,7 @@ to OME-Zarr with the same optimal settings"
 
 **Research Partnership:**
 - Government laboratories
-- Academic institutions  
+- Academic institutions
 - Industry leaders
 - Open source communities
 
@@ -442,7 +492,7 @@ to OME-Zarr with the same optimal settings"
 
 ✅ **OME-Zarr** - Future of scientific imaging formats
 
-✅ **MCP Servers** - Bridge AI and scientific tools  
+✅ **MCP Servers** - Bridge AI and scientific tools
 
 ✅ **Natural Language** - New interface for scientific computing
 
@@ -456,7 +506,7 @@ to OME-Zarr with the same optimal settings"
 
 **What we covered:**
 - OME-Zarr fundamentals and conversion
-- MCP architecture and benefits  
+- MCP architecture and benefits
 - AI-powered scientific workflows
 - Practical GitHub Codespaces setup
 

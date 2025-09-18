@@ -2,9 +2,18 @@
 authors = ["Matt McCormick <matt@fideus.io>"]
 channels = ["conda-forge"]
 name = "scientific-ai-omezarr-tutorial"
-platforms = ["win-64", "linux-64", "linux-aarch64", "osx-arm64"]
+platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "1.0.0"
 
 [tasks]
+convert = "ngff-zarr -i data/vis_male.nrrd -o vis_male.ome.zarr"
+"convert-ome-zarr-0.5" = "ngff-zarr -i data/carp.nrrd -o carp.ome.zarr --ome-zarr-version 0.5"
+"convert-sharding" = "ngff-zarr -i data/carp.nrrd -o carp.ome.zarr --ome-zarr-version 0.5 --chunks-per-shard 4"
 
 [dependencies]
+python = "3.11.*"
+nodejs = ">=24.4.1,<24.5"
+
+[pypi-dependencies]
+ngff-zarr = { version = ">=0.16.1, <0.17", extras = ["cli"] }
+ngff-zarr-mcp = ">=0.5.0, <0.6"
