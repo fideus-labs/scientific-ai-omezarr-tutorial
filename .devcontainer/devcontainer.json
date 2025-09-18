@@ -1,0 +1,28 @@
+{
+  "name": "Scientific AI OME-Zarr Tutorial",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "astral-uv.uv-vscode",          // Replace with the correct identifier once available; otherwise install via postCreateCommand below
+        "marp-team.marp-vscode"
+      ],
+      "settings": {
+        "workbench.startupEditor": "readme",
+        "workbench.action.terminal.new": "terminal",
+        "github.codespaces.settings": {},
+        "github.codespaces.defaultExtensions": [
+          "marp-team.marp-vscode"
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "pixi install",
+  "features": {},
+  "forwardPorts": [],
+  "onCreateCommand": "",
+  "init": true
+}
