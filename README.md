@@ -9,6 +9,13 @@ header: 'Scientific AI and the Future of OME-Zarr'
 footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Scientific AI and the Future of OME-Zarr
 ## Building Intelligent Bioimage Analysis Workflows
 
@@ -18,12 +25,6 @@ footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fi
 EMBL Advanced Methods in Bioimage Analysis
 September 17, 2025
 
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
 ---
 
 ## Today's Journey
