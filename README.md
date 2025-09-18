@@ -367,76 +367,74 @@ pixi global install uv
 ## ngff-zarr MCP Server Capabilities
 
 **Core Functions:**
-- Convert scientific formats to OME-Zarr
-- Inspect and validate OME-Zarr stores
-- Optimize compression and chunking
-- Generate processing scripts
-- Batch operation planning
+- 🔄 Convert scientific formats to OME-Zarr
+- 🔍 Inspect and validate OME-Zarr stores
+- 🛠️ Optimize compression and chunking
+- 📝 Generate processing scripts
+- 📦 Batch operation planning
 
 **AI Integration:**
-- Natural language commands
-- Intelligent parameter selection
-- Automated workflow generation
-
----
-
-
-### Put the Qodo Anteater to work
-
-![h:480 center Qodo extension](./assets/vs-code-qodo-install.png)
+- 💬 Natural language commands
+- 🎯 Intelligent parameter selection
+- 🤖 Automated workflow generation
 
 ---
 
 ## 🛠️ Hands-On: AI-Powered Conversion
 
-**Let's convert NRRD with AI assistance:**
+---
+
+### 💬 Convert a bioimage with AI assistance
+
+Put the Qodo Anteater to work!
 
 In Qodo chat:
 ```
-"Convert the brain.nrrd file to OME-Zarr format and
-find the optimal compression codec for this type of data"
+Convert the vs_male.nrrd file to OME-Zarr format and
+find the optimal compression codec for this type of data.
 ```
 
-**Watch the AI:**
-1. Analyze the input file
-2. Select appropriate parameters
-3. Execute the conversion
-4. Report optimization results
+**✨ [Watch the AI agent](./assets/ai-convert-output.png):**
+1. 🔍 Analyze the input file
+2. 🎯 Select appropriate parameters
+3. ⚙️ Execute the conversion
+4. 📊 Report optimization results
+
 
 ---
 
-## 🛠️ Hands-On: Examine Contents
+### 💬 Examine OME-Zarr contents
 
 **Ask the AI to explore:**
 
 ```
-"Examine the contents of brain.ome.zarr and tell me
-about its structure, dimensions, and metadata"
+Examine the contents of carp.ome.zarr and tell me
+about its structure, dimensions, and metadata
 ```
 
-**The AI will:**
-- Inspect multiscale levels
-- Report spatial metadata
-- Analyze chunk structure
-- Suggest optimization opportunities
+**✨ [The AI agent will](./assets/ai-examine-contents-output.png):**
+- 🔍 Inspect multiscale levels
+- 📏 Report spatial metadata
+- 🧩 Analyze chunk structure
+- ✨ Suggest next steps
 
 ---
 
-## 🛠️ Hands-On: Generate Batch Script
+### 💬 Generate batch script
 
 **Scale up with AI automation:**
 
 ```
-"I have a folder of 50 similar NRRD files.
+I have a folder of 50 similar NRRD files.
 Generate a Python script to batch convert them all
-to OME-Zarr with the same optimal settings"
+to OME-Zarr with the same optimal settings
 ```
 
-**The AI creates:**
-- Complete Python script
-- Error handling
-- Progress reporting
-- Optimized parameters from previous analysis
+**✨ The AI agent creates:**
+- 🐍 Complete Python script
+- ⚠️ Error handling
+- 📈 Progress reporting
+- 🎯 Optimized parameters from previous analysis
 
 ---
 
