@@ -304,25 +304,58 @@ Scientific Data & Tools
 
 ---
 
-## 🛠️ Hands-On: Configure Qodo with MCP
+## 🛠️ Hands-On: Configure Qodo with the ngff-zarr MCP
 
 ---
 
-**In VS Code with Qodo Extension:**
+### Install [uv](https://docs.astral.sh/uv/), if not already installed
 
-1. **Install ngff-zarr MCP server:**
 ```bash
-pip install 'ngff-zarr[mcp]'
+pixi global install uv
 ```
 
-2. **Configure Qodo settings:**
-   - Open Qodo settings
-   - Enable "Agentic Mode"
-   - Add ngff-zarr MCP server endpoint
+`uvx`, which comes with `uv`, will be used to install the `ngff-zarr-mcp` command-line tool and its dependencies, and run the MCP server.
 
-3. **Test the connection:**
-   - Open Qodo chat
-   - Ask: "What MCP servers are available?"
+---
+
+### Install Qodo Extension in VS Code
+
+![h:480 center Qodo extension](./assets/vs-code-qodo-install.png)
+
+---
+
+#### Add Qodo MCP Tools
+
+![h:480 center Qodo Add MCP Tools](./assets/qodo-add-mcp-tools.png)
+
+---
+
+#### Add new MCP
+
+![h:480 center Qodo Add new MCP](./assets/qodo-add-new-mcp.png)
+
+---
+
+#### Add the ngff-zarr MCP server config
+
+```json
+{
+  "mcpServers": {
+    "ngffZarr": {
+      "command": "uvx",
+      "args": ["ngff-zarr-mcp"]
+    }
+  }
+}
+```
+
+![h:300 center Qodo ngff-zarr MCP server](./assets/qodo-ngff-zarr-config.png)
+
+---
+
+#### Watch the ngff-zarr MCP server start
+
+![h:480 center Qodo ngff-zarr MCP server start](./assets/qodo-ngff-zarr-mcp-enabled.png)
 
 ---
 
@@ -344,6 +377,13 @@ pip install 'ngff-zarr[mcp]'
 - Natural language commands
 - Intelligent parameter selection
 - Automated workflow generation
+
+---
+
+
+### Put the Qodo Anteater to work
+
+![h:480 center Qodo extension](./assets/vs-code-qodo-install.png)
 
 ---
 
