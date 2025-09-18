@@ -117,6 +117,19 @@ footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-o
 
 ## 🛠️ Hands-On: Converting bioimages to OME-Zarr
 
+
+---
+
+### 💻 Prerequisites: VS Code Installation
+
+### Install [Visual Studio Code](https://code.visualstudio.com/)
+
+**Download VS Code:**
+- 🌐 **Web:** Visit [code.visualstudio.com](https://code.visualstudio.com/)
+- 🐧 **Linux:** `sudo snap install code --classic` or download .deb/.rpm
+- 🍎 **macOS:** Download from website or `brew install --cask visual-studio-code`
+- 🪟 **Windows:** Download installer or `winget install Microsoft.VisualStudioCode`
+
 ---
 
 ![h:200 Pixi logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/pixi-banner.svg)
