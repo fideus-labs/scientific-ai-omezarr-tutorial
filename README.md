@@ -14,6 +14,9 @@ img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
+.small-text {
+  font-size: 0.6em;
+}
 </style>
 
 # Scientific AI and the Future of OME-Zarr
@@ -25,7 +28,13 @@ img[alt~="center"] {
 EMBL Advanced Methods in Bioimage Analysis
 September 17, 2025
 
-[HTML version of slides](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/)
+<div class="small-text">
+
+🌐 [HTML slides](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/) | 📄 [PDF slides](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/scientific-ai-omezarr-tutorial.pdf) | 📂 [GitHub repository](https://github.com/fideus-labs/scientific-ai-omezarr-tutorial)
+
+**📜 License:** Content [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | Code [MIT](https://opensource.org/licenses/MIT)
+
+</div>
 
 ---
 
