@@ -6,7 +6,7 @@ paginate: true
 backgroundColor: #fff
 color: #333
 header: 'Scientific AI and the Future of OME-Zarr'
-footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
+footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
 ---
 
 <style>
@@ -24,6 +24,8 @@ img[alt~="center"] {
 
 EMBL Advanced Methods in Bioimage Analysis
 September 17, 2025
+
+[HTML version of slides](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/)
 
 ---
 
@@ -75,7 +77,7 @@ September 17, 2025
 - ⚡ Parallel processing friendly
 
 <!--
-footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https:/fideus.io)'
+footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https:/fideus.io)'
 -->
 
 ---
@@ -87,10 +89,10 @@ footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https:/fid
 * Developed by the OME-Zarr and ITK communities for **interoperability** and **performance**.
 * Supports a wide range of scientific image formats and workflows.
 
-![h:150 center ngff-zarr logo](./assets/ngff-zarr-logo.png)
+![h:150 center ngff-zarr logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ngff-zarr-logo.png)
 
 <!--
-footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
+footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
 -->
 ---
 
@@ -108,7 +110,7 @@ footer: '[![h:40 fideus labs logo](./assets/fideus-logo-no-text.svg)](https://fi
 
 ---
 
-![h:200 Pixi logo](./assets/pixi-banner.svg)
+![h:200 Pixi logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/pixi-banner.svg)
 
 ### 📦 Prerequisites: Pixi reproducible software environment
 
@@ -321,19 +323,19 @@ pixi global install uv
 
 ### Install Qodo Extension in VS Code
 
-![h:480 center Qodo extension](./assets/vs-code-qodo-install.png)
+![h:480 center Qodo extension](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/vs-code-qodo-install.png)
 
 ---
 
 #### Add Qodo MCP Tools
 
-![h:480 center Qodo Add MCP Tools](./assets/qodo-add-mcp-tools.png)
+![h:480 center Qodo Add MCP Tools](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-add-mcp-tools.png)
 
 ---
 
 #### Add new MCP
 
-![h:480 center Qodo Add new MCP](./assets/qodo-add-new-mcp.png)
+![h:480 center Qodo Add new MCP](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-add-new-mcp.png)
 
 ---
 
@@ -350,13 +352,13 @@ pixi global install uv
 }
 ```
 
-![h:300 center Qodo ngff-zarr MCP server](./assets/qodo-ngff-zarr-config.png)
+![h:300 center Qodo ngff-zarr MCP server](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-ngff-zarr-config.png)
 
 ---
 
 #### Watch the ngff-zarr MCP server start
 
-![h:480 center Qodo ngff-zarr MCP server start](./assets/qodo-ngff-zarr-mcp-enabled.png)
+![h:480 center Qodo ngff-zarr MCP server start](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-ngff-zarr-mcp-enabled.png)
 
 ---
 
@@ -395,7 +397,7 @@ Convert the vs_male.nrrd file to OME-Zarr format and
 find the optimal compression codec for this type of data.
 ```
 
-**✨ [Watch the AI agent](./assets/ai-convert-output.png):**
+**✨ [Watch the AI agent](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-convert-output.png):**
 1. 🔍 Analyze the input file
 2. 🎯 Select appropriate parameters
 3. ⚙️ Execute the conversion
@@ -413,7 +415,7 @@ Examine the contents of carp.ome.zarr and tell me
 about its structure, dimensions, and metadata
 ```
 
-**✨ [The AI agent will](./assets/ai-examine-contents-output.png):**
+**✨ [The AI agent will](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-examine-contents-output.png):**
 - 🔍 Inspect multiscale levels
 - 📏 Report spatial metadata
 - 🧩 Analyze chunk structure
@@ -431,7 +433,7 @@ Generate a Python script to batch convert them all
 to OME-Zarr with the same optimal settings
 ```
 
-**✨ [The AI agent creates](./assets/ai-generate-batch-script-output.png):**
+**✨ [The AI agent creates](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-generate-batch-script-output.png):**
 - 🐍 Complete Python script
 - ⚠️ Error handling
 - 📈 Progress reporting
